@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class questionThirteenScouts {
 
@@ -27,7 +27,7 @@ public class questionThirteenScouts {
 
   public static void main(String[] args) {
     //
-      Scanner input = new Scanner(System.in);  // Create a Scanner object
+    //  Scanner input = new Scanner(System.in);  // Create a Scanner object
 
       int[][] scouts = {
     // Column  1   2    3   4   5   6
