@@ -27,7 +27,7 @@ public class questionThirteenScouts {
 
   public static void main(String[] args) {
     //
-    //  Scanner input = new Scanner(System.in);  // Create a Scanner object
+     // Scanner input = new Scanner(System.in);  // Create a Scanner object
 
       int[][] scouts = {
     // Column  1   2    3   4   5   6
@@ -49,30 +49,29 @@ public class questionThirteenScouts {
   }
 
   public static void findH(int[][] mat) {
-    int[] maximum = new int[4];
-    for (int i = 0; i < maximum.length; i++) {
-      maximum[i] = mat[i][0];
+      int smallMax = mat[0][0];
+      for(int col = 1; col < mat[1].length; col++) { //already have col = 0 in smallMax
+        if(mat[0][col]>smallMax){
+            smallMax = mat[0][col];
+        }
     }
 
-    for (int row = 0; row < mat.length; row++) {
-      for(int col = 1; col < mat[row].length; col++) { //we already have col = 1 in maximum
-          if (mat[row][col]> maximum[row]){
-              maximum[row] = mat[row][col];
+    for (int row = 1; row < mat.length; row++) {
+        int rowMax = mat[row][0];
+      for(int col = 0; col < mat[row].length; col++) {
+          if (mat[row][col]> rowMax){
+              rowMax = mat[row][col];
           }
       }
-    }
-
-    int min = maximum[0];
-    for (int i = 1; i < maximum.length; i++) {
-      if (maximum[i]<min){
-          min = maximum[i];
+      if (rowMax<smallMax){
+          smallMax = rowMax;
       }
     }
 
       for (int row = 0; row < mat.length; row++) {
-          for(int col = 0; col < mat[row].length; col++) { //we already have col = 1 in maximum
-              if (mat[row][col] == min){
-                System.out.println("Team " + (col+1) + " Battalion " + (row+1) + " (Val = " + min + ")" );
+          for(int col = 0; col < mat[row].length; col++) {
+              if (mat[row][col] == smallMax){
+                System.out.println("Team " + (col+1) + " Battalion " + (row+1) + " (Val = " + smallMax + ")" );
               }
           }
       }
