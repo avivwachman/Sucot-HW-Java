@@ -3,6 +3,8 @@
 public class questionThirteenScouts {
 
   /*
+  
+  "gdud" is the Hebrew word for battalion
 
   Instructions
   4 Gduds (columns)  x  6 teams each (rows)
