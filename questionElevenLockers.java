@@ -9,8 +9,6 @@ the program should return the secret code
 
  */
 
-
-
   public static void main(String[] args) {
     int[][] ourLockers = {
             {-1, -1,    -1,   -1,   -1,   -1,   -1,   -1,   -1,   -1  },
@@ -37,8 +35,8 @@ the program should return the secret code
       return -1;
     }
                       //example: num = 94
-    int col = num%10; // col = 4
-    int row = (num - col)/10; //row = 90/10 = 9
+    int col = num%10; //col = 4
+    int row = num/10; //row = 9
     return room[row][col];
 
   }
