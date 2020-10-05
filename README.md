@@ -13,16 +13,18 @@ Sucot work for school. Two questions about matrix, 2d arrays
 - From the highest value of the gduds, print the gdud with the smallest value (again, could be more than one)
 
   Output example for following matrix:
+  
+  
+| x | 1 | 2 | 3 | 4 | 5 | 6 |
+| --- | --- | --- | --- | --- | --- | ---  |
+| 1 | 09 | 15 | 23 | 18 | 15 | 20 |
+| 2 | 09 | 15 | 23 | 18 | 15 | 20 |
+| 3 | 09 | 15 | 23 | 18 | 15 | 20 |
+| 4 | 09 | 15 | 23 | 18 | 15 | 20 |
 
-      1  2  3  4  5  6
-
-  1   09 15 23 18 15 20
-  2   21 20 19 17 34 22
-  3   30 28 25 19 20 19
-  4   14 16 23 22 21 23
 
   (Output):
   
-  Team 3 gdud 1 (Value = 23)
-  Team 3 gdud 4 (Value = 23)
-  Team 6 gdud 4 (Value = 23)
+  - Team 3 gdud 1 (Value = 23)
+  - Team 3 gdud 4 (Value = 23)
+  - Team 6 gdud 4 (Value = 23)
