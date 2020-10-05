@@ -12,7 +12,7 @@ Sucot work for school. Two questions about matrix, 2d arrays
 - Find the highest value team in each gdud (could be more than one)
 - From the highest value of the gduds, print the gdud with the smallest value (again, could be more than one)
 
-  Output example for following matrix:
+  Output example for following matrix (not including row = 0 and column = 0):
   
   
 | x | 1 | 2 | 3 | 4 | 5 | 6 |
