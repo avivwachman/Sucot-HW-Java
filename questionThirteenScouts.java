@@ -5,8 +5,8 @@ public class questionThirteenScouts {
   /*
 
   Instructions
-  4 Gduds (columns)  x  6 teams each (rows)
-  Find how highest value team in each gdud (could be more than one)
+  4 Gduds (rows)  x  6 teams each (columns)
+  Find the highest value team in each gdud (could be more than one)
   From the highest value of the gduds, print the gdud with the smallest value (again, could be more than one)
 
   Output example for following matrix (from book)
@@ -19,9 +19,9 @@ public class questionThirteenScouts {
   4   14 16 23 22 21 23
 
   (Output):
-  Team 3 gdud 1 (Val = 23)
-  Team 3 gdud 4 (Val = 23)
-  Team 6 gdud 4 (Val = 23)
+  Team 3 gdud 1 (Value = 23)
+  Team 3 gdud 4 (Value = 23)
+  Team 6 gdud 4 (Value = 23)
 
    */
 
