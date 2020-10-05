@@ -8,7 +8,7 @@ Sucot work for school. Two questions about matrix, 2d arrays
 ### Write a program that receives a matrix that contains the codes and an index of a cell. The program should return the secret code.
 
 ## Question 2:
-- 4 Gduds (columns)  x  6 teams each (rows)
+- 4 Gduds (rows)  x  6 teams each (columns)
 - Find the highest value team in each gdud (could be more than one)
 - From the highest value of the gduds, print the gdud with the smallest value (again, could be more than one)
 
