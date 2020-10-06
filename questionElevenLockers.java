@@ -10,6 +10,7 @@ the program should return the secret code
  */
 
   public static void main(String[] args) {
+    //locker example
     int[][] ourLockers = {
             {-1, -1,    -1,   -1,   -1,   -1,   -1,   -1,   -1,   -1  },
             {-1, 1101,  2008, 2021, 1111, 2704, 2704, 2344, 1111, 1112},
@@ -31,7 +32,7 @@ the program should return the secret code
   }
 
   public static int getCode (int[][] room, int num){
-    if (num<11 || num > 99){
+    if (num<11 || num > 99){ //out of bounds!
       return -1;
     }
                       //example: num = 94

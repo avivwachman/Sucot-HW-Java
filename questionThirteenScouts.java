@@ -4,7 +4,7 @@ public class questionThirteenScouts {
 
   /*
 
-  Instructions
+  Instructions:
   4 Gduds (rows)  x  6 teams each (columns)
   Find the highest value team in each gdud (could be more than one)
   From the highest value of the gduds, print the gdud with the smallest value (again, could be more than one)
@@ -38,10 +38,10 @@ public class questionThirteenScouts {
 
       findH(scouts);
 
-
-      // Matrix by input implementation:
+      // ------------Matrix by input implementation: --------------
 
     /*
+
     int[][] matrix = new int[4][6];
     for (int row = 0; row < matrix.length; row++){
       for (int col = 0; col < matrix[row].length ; col++) {
@@ -50,17 +50,32 @@ public class questionThirteenScouts {
     }
 
     */
+
   }
+  /*
+  In order to find all minimum maximum in all rows we will:
+  Find the maximum of each row, check if it is smaller than current minimum max value
+  If it is -> switch
+  Then we will go through the 2d array again and find the maximum value of each row, if it is = smallest maximum
+  We will fo through the row again and print all appearances of the smallest maximum
+   */
+
   public static void findH(int[][] mat) {
-      //First we initialize smallMax with the max of the first row
-      int smallMax = -2; //can't be less kids (negative number)
+      /*
+      First we initialize smallMax with the MAX of the first row
+
+      If we didn't do this stage, we'd have to set smallMax to a number that would necessarily be bigger than the
+      biggest number (max) in the first row. We could set it to 1,000,000 but in EXTREME circumstances,
+      this could fail to work. So I chose this way
+      */
+      int smallMax = -2; //There can't be less kids (negative number)
       for(int col = 0; col < mat[0].length; col++) {
         if(mat[0][col]>smallMax){ //if col in row 0 is bigger than max...
             smallMax = mat[0][col];
         }
     }
     //before going into this loop, we have smallMax which has the highest value from row = 0
-    for (int row = 1; row < mat.length; row++) { //start from row 1, because we already have been through row = 0
+    for (int row = 1; row < mat.length; row++) { //start from row = 1, because we already have been through row = 0
         int rowMax = -2;
       for(int col = 0; col < mat[row].length; col++) {
           if (mat[row][col]> rowMax){
@@ -71,18 +86,21 @@ public class questionThirteenScouts {
           smallMax = rowMax;
       }
     }
-    // now - smallMax has the smallest maximum value from all rows, and we know to might appear more
-    // than once
-    // only show if it is max in said row and = smallest Max
-    for (int row = 0; row < mat.length; row++) {
+    /*
+    now - smallMax has the smallest maximum value from all rows.
+    smallMax might appear more than once as the smallest maximum in a row.
+    We ONLY print a cell, if it is maximum in said row and is = smallest Max
+     */
+
+    for (int row = 0; row < mat.length; row++) { //Find max value in row
       int rowMax = -2;
       for (int col = 0; col < mat[row].length; col++) {
         if (mat[row][col] > rowMax) {
           rowMax = mat[row][col];
         }
       }
-      if (rowMax == smallMax) { // if max in row is what we are looking for (=smallest max)
-        for (int col = 0; col < mat[row].length; col++) { // go through row again and find all max instances
+      if (rowMax == smallMax) { // If max value in row is = smallest max
+        for (int col = 0; col < mat[row].length; col++) { // We go through the row AGAIN and find ALL instances of MAX
           if (mat[row][col] == smallMax) {
             System.out.println(
                 "Team " + (col + 1) + " gdud " + (row + 1) + " (Value = " + smallMax + ")");
@@ -91,6 +109,6 @@ public class questionThirteenScouts {
       }
       }
   }
-  
-  
+
+
 }
