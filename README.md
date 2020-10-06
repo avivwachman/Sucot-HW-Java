@@ -18,7 +18,7 @@ Sucot work for school. Two questions about matrix, 2d arrays
 | x | 1 | 2 | 3 | 4 | 5 | 6 |
 | --- | --- | --- | --- | --- | --- | ---  |
 | 1 | 09 | 15 | 23 | 18 | 15 | 20 |
-| 2 | 21 | 20 | 19 | 17 | 34 | 22 |
+| 2 | 21 | 23 | 19 | 17 | 34 | 22 |
 | 3 | 30 | 28 | 25 | 19 | 20 | 19 |
 | 4 | 14 | 16 | 23 | 22 | 21 | 23 |
 
@@ -28,3 +28,5 @@ Sucot work for school. Two questions about matrix, 2d arrays
   - Team 3 gdud 1 (Value = 23)
   - Team 3 gdud 4 (Value = 23)
   - Team 6 gdud 4 (Value = 23)
+
+*Important to notice that Team 2 gdud 2 (Value = 23) shouldn't be printed! Beacuse 23 isn't the maximum value for this gdud (row)
