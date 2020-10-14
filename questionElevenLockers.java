@@ -31,17 +31,21 @@ the program should return the secret code
     System.out.println(tester(id, outcome));
   }
 
+  //טענת כניסה: הפעולה מקבלת מערך דו ממדי ובו הלוקרים, ומספר דו ספרתי המייצג את המספר הסידורי של לוקר
+  //טענת יציאה: הפעולה מחזירה את הקוד הסודי של הלוקר
+
   public static int getCode (int[][] room, int num){
     if (num<11 || num > 99){ //out of bounds!
       return -1;
     }
-                      //example: num = 94
+                      //example: number = 94
     int col = num%10; //col = 4
     int row = num/10; //row = 9
     return room[row][col];
 
   }
 
+// פעולה הבודקת שהערך 94 החזיר את את המספר המתאים לו
   public static String tester(int id, int outcome){
     if (id != 94){
       return "False: wrong id";
