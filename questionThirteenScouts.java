@@ -29,7 +29,7 @@ public class questionThirteenScouts {
 
         //  Scanner input = new Scanner(System.in);  // Create a Scanner object, used if matrix is by input
         int[][] scouts = { //example of matrix from book
-                // Column  1   2   3   4   5   6
+     // Column  1   2   3   4   5   6
                 {9,  15, 23, 18, 15, 20}, //row 1
                 {21, 20, 19, 17, 34, 22}, //row 2
                 {30, 28, 25, 19, 20, 19}, //row 3
